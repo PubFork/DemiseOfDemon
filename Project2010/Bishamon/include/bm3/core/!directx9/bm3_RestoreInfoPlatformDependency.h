@@ -1,0 +1,16 @@
+#ifndef BM3_SDK_INC_BM3_CORE_BM3_RESTOREINFOPLATFORMDEPENDENCY_H
+#define BM3_SDK_INC_BM3_CORE_BM3_RESTOREINFOPLATFORMDEPENDENCY_H
+
+namespace bm3{
+BM3_BEGIN_PLATFORM_NAMESPACE
+
+namespace internal{
+
+class RestoreInfoPlatformDependency{
+};
+
+}	// namespace internal
+BM3_END_PLATFORM_NAMESPACE
+}	// namespace bm3
+
+#endif	// #ifndef BM3_SDK_INC_BM3_CORE_BM3_RESTOREINFOPLATFORMDEPENDENCY_H

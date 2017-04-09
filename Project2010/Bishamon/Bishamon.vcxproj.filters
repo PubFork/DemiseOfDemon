@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\BMAllocator.cpp" />
+    <ClCompile Include="src\BMBinary.cpp" />
+    <ClCompile Include="src\BMEffect.cpp" />
+    <ClCompile Include="src\BMManager.cpp" />
+    <ClCompile Include="src\BMModel.cpp" />
+    <ClCompile Include="src\BMObject.cpp" />
+    <ClCompile Include="src\BMTexture.cpp" />
+    <ClCompile Include="src\DxBishamon.cpp" />
+    <ClCompile Include="src\DxBMFunc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BMAllocator.h" />
+    <ClInclude Include="src\BMBinary.h" />
+    <ClInclude Include="src\BMEffect.h" />
+    <ClInclude Include="src\BMManager.h" />
+    <ClInclude Include="src\BMModel.h" />
+    <ClInclude Include="src\BMObject.h" />
+    <ClInclude Include="src\BMTexture.h" />
+    <ClInclude Include="src\DxBishamon.h" />
+    <ClInclude Include="src\DxBMFunc.h" />
+    <ClInclude Include="src\stdafx.h" />
+  </ItemGroup>
+</Project>

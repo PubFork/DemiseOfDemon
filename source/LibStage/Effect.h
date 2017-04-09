@@ -1,0 +1,109 @@
+#pragma once
+
+#include "smart_ptr.h"
+#include "mathmatics.h"
+#include <array>
+
+PTR( Effect );
+PTR( Camera );
+
+class Effect {
+public:
+	enum EFFECT {
+		BMVOL1_1_CRYSTAL,
+		BMVOL1_1_CURE,
+		BMVOL1_1_FIRE,
+		BMVOL1_1_ICE,
+		BMVOL1_1_JEWEL,
+		BMVOL1_1_METEO,
+		BMVOL1_1_PAPER,
+		BMVOL1_1_ROCK,
+		BMVOL1_1_SHOGEKI,
+		BMVOL1_1_THUNDER,
+		BMVOL1_1_TUBO,
+		BMVOL1_2_DIGICORE,
+		BMVOL1_2_EARTHNET_01,
+		BMVOL1_2_EARTHNET_02,
+		BMVOL1_2_FIRETREE_01,
+		BMVOL1_2_FIRETREE_02,
+		BMVOL1_2_FIRETREE_03,
+		BMVOL1_2_KUSA,
+		BMVOL1_2_LIGHTNING02,
+		BMVOL1_2_LIGHTNING03,
+		BMVOL1_2_LIGHTNING04,
+		BMVOL1_2_MAHOJIN_01,
+		BMVOL1_2_MAHOJIN_02,
+		BMVOL1_2_MAHOJIN_03,
+		BMVOL1_2_PIPE_01,
+		BMVOL1_2_PIPE_02,
+		BMVOL1_2_PIPE_03,
+		BMVOL1_2_PIPE_04,
+		BMVOL1_2_WATER_01,
+		BMVOL1_2_WATER_02,
+		BMVOL1_2_WATERCOLORFOUNTAIN,
+		BMVOL1_2_WATERROCK,
+		BMVOL1_3_CUBEDANCE,
+		BMVOL1_3_EYE,
+		BMVOL1_3_FIREWORKS,
+		BMVOL1_3_ICECIRCLE,
+		BMVOL1_3_RECOVERY,
+		BMVOL1_3_REVIVAL,
+		BMVOL1_3_SLASH,
+		BMVOL1_3_STARDANCE,
+		BMvol2_ALL,
+		BMVOL2_HIT01,
+		BMVOL2_HIT02,
+		BMVOL2_HIT03,
+		BMVOL2_HIT04,
+		BMVOL2_HIT05,
+		BMVOL2_HIT06,
+		BMVOL2_HIT07,
+		BMVOL2_HIT08,
+		BMVOL2_HIT09,
+		BMVOL2_HIT10,
+		BMVOL3_CHANT,
+		BMVOL3_DARK,
+		BMVOL3_FIRE,
+		BMVOL3_ICE,
+		BMVOL3_LIGHT,
+		BMVOL3_MAGIC,
+		BMVOL3_POISON,
+		BMVOL3_ROCK,
+		BMVOL3_WARP,
+		BMVOL3_WATER,
+		BMVOL3_WIND,
+		BOMB_MANGA_KS01,
+		E_HITENEMY,
+		ENERGYWAVE_SS01,
+		GEM_ALWAYS_KS01,
+		HIT09_BOMB_KS02,
+		MODEL_COIN_KS02,
+		REFERENCE_RED_ROSE_KS02,
+		ROSE_ALWAYS_KS02,
+		SMOKE_KS01,
+		TESTBLUE,
+		MAX_EFFECT,
+	};
+
+	struct DATA {
+		EFFECT tag;
+		Vector pos;
+		float scale;
+		int time;
+	};
+public:
+	Effect( );
+	virtual ~Effect( );
+public:
+	void update( );
+	void play( EFFECT effect, Vector& pos, float scale = 1.0f, int time = -1 );
+	int getNum( ) const;
+	DATA getData( int index ) const;
+	int getMaxNum( ) const;
+private:
+	static const int MAX_NUM = 100;
+private:
+	int _num;
+	std::array< DATA, MAX_NUM > _data;
+};
+

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibFramework\LibFramework.vcxproj">
+      <Project>{93c42e2f-a7a3-45e7-a4e4-0e6122f7475f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\LibStage\Boss.h" />
+    <ClInclude Include="..\..\source\LibStage\Bullet.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletArrow.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletImpact.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletLay.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletMissile.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletNova.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletShot.h" />
+    <ClInclude Include="..\..\source\LibStage\BulletSword.h" />
+    <ClInclude Include="..\..\source\LibStage\CameraAdv.h" />
+    <ClInclude Include="..\..\source\LibStage\Character.h" />
+    <ClInclude Include="..\..\source\LibStage\Cohort.h" />
+    <ClInclude Include="..\..\source\LibStage\Deedbox.h" />
+    <ClInclude Include="..\..\source\LibStage\Deedboxes.h" />
+    <ClInclude Include="..\..\source\LibStage\Door.h" />
+    <ClInclude Include="..\..\source\LibStage\Doors.h" />
+    <ClInclude Include="..\..\source\LibStage\Effect.h" />
+    <ClInclude Include="..\..\source\LibStage\Enemy.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyArmor.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyCyclops.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyGhost.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyGoblin.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyMinotaur.h" />
+    <ClInclude Include="..\..\source\LibStage\EnemyRedGoblin.h" />
+    <ClInclude Include="..\..\source\LibStage\Experience.h" />
+    <ClInclude Include="..\..\source\LibStage\Experiences.h" />
+    <ClInclude Include="..\..\source\LibStage\Field.h" />
+    <ClInclude Include="..\..\source\LibStage\Item.h" />
+    <ClInclude Include="..\..\source\LibStage\loadMapData.h" />
+    <ClInclude Include="..\..\source\LibStage\Map.h" />
+    <ClInclude Include="..\..\source\LibStage\Object.h" />
+    <ClInclude Include="..\..\source\LibStage\Party.h" />
+    <ClInclude Include="..\..\source\LibStage\Player.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerKnight.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerMage.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerMonk.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerShooter.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerSummoner.h" />
+    <ClInclude Include="..\..\source\LibStage\PlayerWarrior.h" />
+    <ClInclude Include="..\..\source\LibStage\Stage.h" />
+    <ClInclude Include="..\..\source\LibStage\Treasure.h" />
+    <ClInclude Include="..\..\source\LibStage\Treasures.h" />
+    <ClInclude Include="..\..\source\LibStage\Viewer.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerArrow.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerBoss.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerCohort.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerDeedboxes.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerDoors.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerExperiences.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerGround.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerImpact.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerLay.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerMirror.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerMissile.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerNova.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerParty.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerShadow.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerShot.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerSword.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerTreasures.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerWater.h" />
+    <ClInclude Include="..\..\source\LibStage\ViewerWeapon.h" />
+    <ClInclude Include="..\..\source\LibStage\Weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\LibStage\Boss.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Bullet.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletArrow.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletImpact.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletLay.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletMissile.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletNova.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletShot.cpp" />
+    <ClCompile Include="..\..\source\LibStage\BulletSword.cpp" />
+    <ClCompile Include="..\..\source\LibStage\CameraAdv.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Character.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Cohort.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Deedbox.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Deedboxes.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Door.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Doors.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Effect.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Enemy.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyArmor.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyCyclops.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyGhost.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyGoblin.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyMinotaur.cpp" />
+    <ClCompile Include="..\..\source\LibStage\EnemyRedGoblin.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Experience.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Experiences.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Field.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Item.cpp" />
+    <ClCompile Include="..\..\source\LibStage\loadMapData.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Map.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Object.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Party.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Player.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerKnight.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerMage.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerMonk.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerShooter.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerSummoner.cpp" />
+    <ClCompile Include="..\..\source\LibStage\PlayerWarrior.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Stage.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Treasure.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Treasures.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Viewer.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerArrow.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerBoss.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerCohort.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerDeedboxes.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerDoors.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerExperiences.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerGround.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerImpact.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerLay.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerMirror.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerMissile.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerNova.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerParty.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerShadow.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerShot.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerSword.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerTreasures.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerWater.cpp" />
+    <ClCompile Include="..\..\source\LibStage\ViewerWeapon.cpp" />
+    <ClCompile Include="..\..\source\LibStage\Weapon.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A507404-1F67-4233-B9C1-41DF1C1E6E89}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibStage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source/LibClient;$(SolutionDir)../source/LibStatus;$(SolutionDir)../source/LibFramework;C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../source/LibClient;$(SolutionDir)../source/LibStatus;$(SolutionDir)../source/LibFramework;C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
